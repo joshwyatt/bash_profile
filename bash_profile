@@ -6,7 +6,7 @@ alias subl="open -a Sublime\ Text\ 2"
 alias prof="subl ~/.bash_profile"
 alias reprof=". ~/.bash_profile"
 
-# Navigational alias's
+# Navigational aliases
 alias tm="pro; cd technical_mentor"
 alias pdf="cd /Users/jDub/Documents/pdfs"
 alias ss="cd ~/Documents/cp/shellScripts/"
