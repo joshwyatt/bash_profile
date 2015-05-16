@@ -1,5 +1,22 @@
+# Set default editor
+EDITOR=vim
+
+# Configure command line colors
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
+alias ls='ls -GFh'
+
+# Set color variables
+YELLOW="\[\e[0;33m\]"
+RED="\[\e[0;31m\]"
+PURPLE="\[\e[1;34m\]"
+
+# load script that allows for showing git branch is PS1
+source /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-prompt.sh
+
 # Change command prompt display
-PS1="\[\e[0;95m\]\W: jDub\$\[\e[0m\] "
+NAME="jDub"
+export PS1="${YELLOW}\W:${PURPLE}\$(__git_ps1)${RED} ${NAME}\$ "
 
 # Meta alias's
 alias osu="open -a Sublime\ Text\ 2"
@@ -7,7 +24,7 @@ alias prof="subl ~/.bash_profile"
 alias reprof=". ~/.bash_profile"
 
 # Navigational alias's
-alias pdf="cd /Users/jDub/Documents/pdfs"
+alias pdf="cd ~/Documents/pdfs"
 alias de="cd ~/Desktop"
 alias ds="cd ~/Documents"
 alias c="cd ~/Documents/cp"
@@ -35,7 +52,6 @@ alias gm="git merge"
 alias gpom="git push origin master"
 alias gpum="git pull origin master"
 alias gd="git diff"
-alias grb="git rebase"
 alias gpo="git push origin"
 alias gob="git checkout -b"
 
@@ -67,4 +83,9 @@ tosu () {
 }
 
 # Run python's simple server
-alias serve="python -m SimpleHTTPServer" 
+alias serve="python -m SimpleHTTPServer"
+
+export REPLYTO=mail@mail.com  # put your email address here
+alias zach="mail zach@fake_gmail.com"
+alias tony="mail tony@fake_hackreactor.com"
+alias bonnie="mail bonnie@fake_gmail.com"
