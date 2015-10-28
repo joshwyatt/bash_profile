@@ -96,6 +96,14 @@ tosu () {
   osu "$1"
 }
 
+# adds alias to .bash_profile
+addalias () {
+  echo "alias $1=\"$2\"" >> ~/.bash_profile;r
+}
+
+# deletes folder
+alias rmf="rm -rf"
+
 # Run python's simple server
 alias serve="python -m SimpleHTTPServer"
 
