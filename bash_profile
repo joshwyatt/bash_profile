@@ -27,4 +27,4 @@ WHITE="\[\e[1;37m\]"
 
 # Change command prompt display
 NAME="your_name_here"
-export PS1="${YELLOW}\W:${PURPLE}\$(__git_ps1)${RED} ${NAME}\$ "
+export PS1="${YELLOW}\W:${PURPLE}${RED} ${NAME}\$ "
