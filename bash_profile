@@ -25,6 +25,8 @@ BROWN="\[\e[0;33m\]"
 LIGHT_GRAY="\[\e[0;37m\]"
 WHITE="\[\e[1;37m\]"
 
+# Reset Color
+Color_Off='\033[0m'       # Text Reset
+
 # Change command prompt display
-NAME="your_name_here"
-export PS1="${YELLOW}\W:${PURPLE}${RED} ${NAME}\$ "
+PS1="${YELLOW}\W:${PURPLE}${RED} \u ${Color_Off}\$ "
